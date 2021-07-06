@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('https://drive.google.com/file/d/1R1o52tDz7jZaVI7zJ4xbi2YbulPU1xyM/view?usp=sharing','rb'))   
-dataset= pd.read_csv('https://drive.google.com/file/d/1q5wFZeEyQmiseWpagBAOwLM-gs1jaGGd/view?usp=sharing')
+model = pickle.load(open('/content/kmeansclusterassignment.pkl','rb'))   
+dataset= pd.read_csv('/content/clustering Dataset3.csv')
 X = dataset.iloc[:,1:].values
 # Taking care of missing data
 #handling missing data (Replacing missing data with the mean value)  
